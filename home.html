@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="nav.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Home page of Your Website" />
+  <title>Your Website — Home</title>
+   
+</head>
+<body>
+  <header>
+    <h1>CYBERSHOP</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="home.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+      </ul>
+    </nav>
+  </header>
+    
+  <main>
+    <section class="hero">
+      <h2>Welcome to Your Website</h2>
+      <p>Short intro about your site. Explain what users can find here and why it’s useful.</p>
+      <p><a href="services.html">Explore our services →</a></p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Product One</h3>
+          <img src="gpu.avif" alt="" style="height: 100px; width: 20%; justify-content: center;">
+          <p style="justify-content: center;">RTX 4060.</p>
+        </article>
+        <article class="card">
+          <h3>Product Two</h3>
+          <img src="ryzen.webp" alt="" style="height: 100px; width: 20%; justify-content: center;">
+          <p style="justify-content: center;">Ryzen 7 5800X.</p>
+        </article>
+        <article class="card">
+          <h3>Product Three</h3>
+          <img src="aulat640.webp" alt="" style="height: 100px; width: 20%; justify-content: center;">
+          <p style="justify-content: center;">Aula T640.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+``
